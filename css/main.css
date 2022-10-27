@@ -1,0 +1,48 @@
+.searchbox {
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.show-weather {
+  background-image: url(../img/weather.jpg);
+  background-size: cover;
+}
+
+.day-weather {
+  background-color: #1d3557cc;
+  color: white;
+  padding: 0;
+  border-radius: 10px;
+  height: 250px;
+}
+
+.header-weather {
+  background-color: #1d3557;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.day-weather2 {
+  background-color: #457b9db5;
+  color: white;
+  padding: 0;
+  border-radius: 10px;
+  height: 250px;
+}
+
+.day-weather2 .header-weather {
+  background-color: #457b9d;
+}
+
+.day-weather3 {
+  background-color: #a8dadcb5;
+  color: white;
+  padding: 0;
+  border-radius: 10px;
+  height: 250px;
+}
+
+.day-weather3 .header-weather {
+  background-color: #a8dadc;
+}

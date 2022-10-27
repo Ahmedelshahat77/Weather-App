@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light px-5">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img class="w-75" src="img/logo@2x.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">News</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="show-weather">
+      <div class="searchbox">
+        <div class="container">
+          <div class="row">
+            <input
+              type="text"
+              name="search"
+              id="inputSearch"
+              placeholder="find your location ..."
+              class="form-control"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 my-5" id="showWeather">
+            <div class="day-weather">
+              <div
+                class="header-weather d-flex justify-content-around align-items-center w-100 py-2"
+              >
+                <h5 id="day"></h5>
+                <h5 id="month"></h5>
+              </div>
+              <div class="body-weather">
+                <div class="container">
+                  <div class="row">
+                    <h2 class="text-center" id="city"></h2>
+                    <div
+                      class="col-md-6 d-flex align-items-center justify-content-center"
+                    >
+                      <h2><span id="weather"></span><sup>o</sup>C</h2>
+                    </div>
+                    <div
+                      class="col-md-6 d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <img id="todayImg" src="" alt="" />
+                      <p id="description"></p>
+                    </div>
+                  </div>
+                  <div
+                    class="icons d-flex align-items-center justify-content-center py-2"
+                  >
+                    <ul class="list-unstyled d-flex gap-4">
+                      <li>
+                        <i class="fa-solid fa-umbrella px-1"></i
+                        ><span id="windHim"></span>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-compass px-1"></i
+                        ><span id="windDir"></span>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-wind px-1"></i
+                        ><span id="windSpeed"></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 my-5" id="showWeather">
+            <div class="day-weather2">
+              <div
+                class="header-weather d-flex justify-content-around align-items-center w-100 py-2"
+              >
+                <h5 class="day"></h5>
+                <h5 class="month"></h5>
+              </div>
+              <div class="body-weather">
+                <div class="container">
+                  <h2 class="text-center">Tomorrow</h2>
+                  <div class="row">
+                    <div
+                      class="col-md-6 d-flex align-items-center justify-content-center"
+                    >
+                      <h2><span class="weather"></span><sup>o</sup>C</h2>
+                    </div>
+                    <div
+                      class="col-md-6 d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <img class="nextdayImg" src="" alt="" />
+                      <p class="description"></p>
+                    </div>
+                  </div>
+                  <div
+                    class="icons d-flex align-items-center justify-content-center py-2"
+                  >
+                    <ul class="list-unstyled d-flex gap-4">
+                      <li>
+                        <i class="fa-solid fa-umbrella px-1"></i
+                        ><span class="windHim"></span>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-wind px-1"></i
+                        ><span class="windSpeed"></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 my-5" id="showWeather">
+            <div class="day-weather3">
+              <div
+                class="header-weather d-flex justify-content-around align-items-center w-100 py-2"
+              >
+                <h5 class="day"></h5>
+                <h5 class="month"></h5>
+              </div>
+              <div class="body-weather">
+                <div class="container">
+                  <h2 class="text-center">After Tomorrow</h2>
+                  <div class="row">
+                    <div
+                      class="col-md-6 d-flex align-items-center justify-content-center"
+                    >
+                      <h2><span class="weather"></span><sup>o</sup>C</h2>
+                    </div>
+                    <div
+                      class="col-md-6 d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <img class="nextdayImg" src="" alt="" />
+                      <p class="description"></p>
+                    </div>
+                  </div>
+                  <div
+                    class="icons d-flex align-items-center justify-content-center py-2"
+                  >
+                    <ul class="list-unstyled d-flex gap-4">
+                      <li>
+                        <i class="fa-solid fa-umbrella px-1"></i
+                        ><span class="windHim"></span>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-wind px-1"></i
+                        ><span class="windSpeed"></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer bg-dark text-center">
+        <div class="container">
+          <div class="row">
+            <h3 class="text-white py-3">Created by Ahmed Elshahat</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
